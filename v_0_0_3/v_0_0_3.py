@@ -51,3 +51,26 @@ class AdvanceCalculater:
 
   def combinations(self, n, r):
     return math.comb(n, r)
+
+calc = AdvanceCalculater()
+
+while True:
+  print("\n=== Advance Calculater ===")
+  print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Power")
+    print("6. Square Root")
+    print("7. Factorial")
+    print("8. Sin")
+    print("9. Cos")
+    print("10. Tan")
+    print("11. Log10")
+    print("12. Natural Log")
+    print("13. GCD")
+    print("14. LCM")
+    print("15. Permutation")
+    print("16. Combination")
+    print("0. Exit")
+  
