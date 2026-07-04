@@ -86,31 +86,64 @@ while True:
     if choice == "1":
         print(f"Result {a} + {b} = ", calc.add(a,b))
       
-    if choice == "2":
+    elif choice == "2":
         print(f"Result {a} - {b} = ", calc.sub(a,b))
 
-    if choice == "3":
+    elif choice == "3":
         print(f"Result {a} * {b} = ", calc.multiply(a,b))
 
-    if choice == "4":
+    elif choice == "4":
         print(f"Result {a} * {b} = ", calc.divide(a,b))
 
-    if choice == "5":
+    elif choice == "5":
         print(f"Result {a} * {b} = ", calc.power(a,b))
 
-    if choice == "13":
+    elif choice == "13":
         print(f"Result GCD of {a} and,{b} = ", calc.gcd(int(a), int(b)))
 
-    if choice == "14":
+    elif choice == "14":
         print(f"Result LCM of {a} and,{b} = ", calc.lcm(int(a), int(b)))
 
-    if choice == "6":
+    elif choice == "6":
         n = float(input("Number: "))
         print(f"Result sqrt of {n} = ", calc.square_root(int(n)))
 
-    if choice == "7":
+    elif choice == "7":
         n = float(input("Number: "))
         print(f"Result factorial of {n} = ", calc.factorial(int(n)))
+
+    elif choice == "8":
+        angle = float(input("Number: "))
+        print("Angle in degrees: ", calc.sin(int(angle)))
+
+    elif choice == "9":
+        angle = float(input("Number: "))
+        print("Angle in degrees: ", calc.cos(int(angle)))
+
+    elif choice == "10":
+        angle = float(input("Number: "))
+        print("Angle in degrees: ", calc.tan(int(angle)))
+
+    elif choice == "11":
+        n = float(input("Number: "))
+        print(f"Log {n}: ", calc.log(int(n)))
+
+    elif choice == "12":
+        angle = float(input("Number: "))
+        print(f"Log10 of {n}: ", calc.ln(int(n)))
+
+    elif choice == "15":
+        n = int(input("n: "))
+        r = int(input("r: "))
+        print(f"Permutation of {n} and {r}: ", calc.permutations(n, r))
+
+    elif choice == "16":
+        n = int(input("n: "))
+        r = int(input("r: "))
+        print(f"Combination of {n} and {r}: ", calc.combinations(n, r))
+
+    else:
+        print("Invalid choice")
               
 
     
