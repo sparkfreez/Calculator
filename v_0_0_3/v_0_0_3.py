@@ -22,7 +22,7 @@ class AdvanceCalculater:
   def square_root(self, a):
     return math.sqrt(a)
 
-  def factorial(,self, n):
+  def factorial(self, n):
     return math.factorial(n)
 
   def sin(self, angle):
@@ -55,8 +55,8 @@ class AdvanceCalculater:
 calc = AdvanceCalculater()
 
 while True:
-  print("\n=== Advance Calculater ===")
-  print("1. Add")
+    print("\n=== Advance Calculater ===")
+    print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
@@ -73,4 +73,44 @@ while True:
     print("15. Permutation")
     print("16. Combination")
     print("0. Exit")
-  
+
+    choice = input("Enter choice: ")
+
+    if choice == "0":
+        break
+      
+    elif choice in ["1", "2", "3", "4","5","13","14"]:
+        a = float(input("First number: "))
+        b = float(input("Second number: "))
+
+    if choice == "1":
+        print(f"Result {a} + {b} = ", calc.add(a,b))
+      
+    if choice == "2":
+        print(f"Result {a} - {b} = ", calc.sub(a,b))
+
+    if choice == "3":
+        print(f"Result {a} * {b} = ", calc.multiply(a,b))
+
+    if choice == "4":
+        print(f"Result {a} * {b} = ", calc.divide(a,b))
+
+    if choice == "5":
+        print(f"Result {a} * {b} = ", calc.power(a,b))
+
+    if choice == "13":
+        print(f"Result GCD of {a} and,{b} = ", calc.gcd(int(a), int(b)))
+
+    if choice == "14":
+        print(f"Result LCM of {a} and,{b} = ", calc.lcm(int(a), int(b)))
+
+    if choice == "6":
+        n = float(input("Number: "))
+        print(f"Result sqrt of {n} = ", calc.square_root(int(n)))
+
+    if choice == "7":
+        n = float(input("Number: "))
+        print(f"Result factorial of {n} = ", calc.factorial(int(n)))
+              
+
+    
